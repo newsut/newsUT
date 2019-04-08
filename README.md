@@ -1,4 +1,4 @@
-Group Project - README Template
+newsUT Team - README
 ===
 
 # newsUT
@@ -20,7 +20,7 @@ An app that allows users to read news articles from UT News sites such as the Da
 - **Story:** 
 - **Market:** UT Austin students
 - **Habit:**
-- **Scope:**
+- **Scope:** Social and news platform for UT
 
 ## Product Spec
 
@@ -44,35 +44,62 @@ An app that allows users to read news articles from UT News sites such as the Da
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Initial Login Screen
+    * New user/UT org can sign up, login, or skip and use app without account
+* Home Screen
+    * Feed of news, events, and sports articles and news
+    * Sort and navigate articles by type (optional)
+    * Think Facebook feed
+* Upcoming Events Feed
+    * Feed of upcoming events
+    * Calendar (optional)
+* Intramural Sports Homepage (optional)
+    * List teams and upcoming games
+* Newsletters
+    * List newsletters from orgs that user follows
+    * For UT Orgs, post events option
+* Single Newsletter
+    * Displays a specific newsletter
+* Browse/Search Clubs
+    * Browse and search through UT clubs and organizations
+    * Think Instagram Explore page
+* Single Event Page
+    * Details on upcoming event 
+* Page for each UT Org/Club
+    * Find information on club
+    * Follow button for regular user to follow the org
+* Settings
+    * Contains Sign Up/Login/Logout
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Screen
+* Upcoming Events Feed
+* Intramural Sports Homepage (optional)
+* Newsletters
+* Browse/Search Clubs
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Initial Login Screen
+   * Tab View Controller
+      * Home Screen
+          * Single Event Page
+* Upcoming Events Feed
+   * Single Event Page
+* Browse/Search Clubs
+   * Settings
+   * Page for each UT Org/Club
+* Newsletters
+   * Single Newsletter
+* Single Event Page
+    * Page for each UT Org/Club
 
-## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+## Wireframes (Digital Mockup) 
+<img src="https://i.imgur.com/xapO14r.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
