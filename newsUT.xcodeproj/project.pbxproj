@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		15A6665EE4F61DACAAF7D782 /* Pods_newsUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */; };
 		2D50F011BEB0814F8177292A /* Pods_newsUTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DDDE925749B66CE553C9B9 /* Pods_newsUTTests.framework */; };
+		9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F6226548E7000AB3D8 /* ArticleCell.swift */; };
+		9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F8226548FA000AB3D8 /* EventCell.swift */; };
 		C2E818DB226538AE00BDB4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */; };
 		C2E818DD226538AE00BDB4A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E818DC226538AE00BDB4A0 /* ViewController.swift */; };
 		C2E818E0226538AE00BDB4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E818DE226538AE00BDB4A0 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FA8721BADFFE274750B46D /* Pods_newsUTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2AEBC026CA8F12F39D1528 /* Pods-newsUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUT/Pods-newsUT.debug.xcconfig"; sourceTree = "<group>"; };
+		9898A6F6226548E7000AB3D8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		9898A6F8226548FA000AB3D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		9B9456EC572D48E43313172D /* Pods-newsUTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUTUITests/Pods-newsUTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E818D7226538AE00BDB4A0 /* newsUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */,
 				C2E818DC226538AE00BDB4A0 /* ViewController.swift */,
 				C2E818DE226538AE00BDB4A0 /* Main.storyboard */,
+				9898A6F6226548E7000AB3D8 /* ArticleCell.swift */,
+				9898A6F8226548FA000AB3D8 /* EventCell.swift */,
 				C2E8191422653D5100BDB4A0 /* ArticleViewController.swift */,
 				C2E8191622653D5C00BDB4A0 /* EventViewController.swift */,
 				C2E8190C22653CFD00BDB4A0 /* ArticlesFeedViewController.swift */,
@@ -396,12 +402,14 @@
 				C2E818DD226538AE00BDB4A0 /* ViewController.swift in Sources */,
 				C2E8191322653D2700BDB4A0 /* DiscoverFeedViewController.swift in Sources */,
 				C2E8190D22653CFD00BDB4A0 /* ArticlesFeedViewController.swift in Sources */,
+				9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */,
 				C2E8191522653D5100BDB4A0 /* ArticleViewController.swift in Sources */,
 				C2E8191722653D5C00BDB4A0 /* EventViewController.swift in Sources */,
 				C2E8191122653D1200BDB4A0 /* NewslettersFeedViewController.swift in Sources */,
 				C2E8190F22653D0700BDB4A0 /* EventsFeedViewController.swift in Sources */,
 				C2E8190B22653C6300BDB4A0 /* HomeTabBarController.swift in Sources */,
 				C2E818DB226538AE00BDB4A0 /* AppDelegate.swift in Sources */,
+				9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
