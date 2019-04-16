@@ -104,10 +104,62 @@ An app that allows users to read news articles from UT News sites such as the Da
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+#### User
+| Property | Type 
+| -------- | -------- 
+| Username     | String |
+| Password    | String |
+| Favorited Articles     | Array | 
+| Favorited Events     | Array |
+| Subcribed Orgs    | Array  |
+
+#### Event
+| Property | Type 
+| -------- | -------- 
+| Title     | String |
+| Description   | String |
+| Date     | String | 
+| Image    | UIImage |
+| Link to Tickets    | URL  |
+| Location   | Map Location |
+| Users going   | Array  |
+| Host   | User  |
+#### Organization (Subclass of User)
+| Property | Type 
+| -------- | -------- 
+| Name     | String |
+| Description   | String |
+| Profile Image    | UIImage | 
+
+#### Article
+| Property | Type 
+| -------- | -------- 
+| Title     | String |
+| Content   | String |
+| Date     | String | 
+| Images    | UIImage Array|
+| Link to Article    | URL  |
+| Author  | String |
+| Publisher   | Org |
+
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Article Feed
+    - (Read/GET)
+- Events Feed
+    - (Read/GET)
+- Create Event
+    - (Create/POST) Create new event (Orgs only)
+- Event View
+    - (Create/GET) Save an event
+    - (Delete) Delete saved event
+    - (Update/Put) Edit event (Orgs only)
+- Article View
+    - (Create/GET) Save an article
+    - (Delete) Delete saved article
+- Profile View
+    - (Read/GET) Logged in user
+    - (Update/PUT) Update user info
