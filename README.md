@@ -166,5 +166,12 @@ An app that allows users to read news articles from UT News sites such as the Da
     - (Update/PUT) Update user info
     
 ## Updates
-### Sprint1
-### Sprint2
+### Sprint1 - (Week 10)
+- Created project
+- Created the basic navigation
+- Setup table views for the Home feed and Events feed
+- Plan for next week
+   - Meet to work together
+   - Setup the Parse database
+   - Create login
+   - Begin development of different pages
