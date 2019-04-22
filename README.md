@@ -5,9 +5,10 @@ newsUT Team - README
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Updates](#Updates)
 
 ## Overview
 ### Description
@@ -104,10 +105,77 @@ An app that allows users to read news articles from UT News sites such as the Da
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+#### User
+| Property | Type 
+| -------- | -------- 
+| Username     | String |
+| Password    | String |
+| Favorited Articles     | Array | 
+| Favorited Events     | Array |
+| Subcribed Orgs    | Array  |
+
+#### Event
+| Property | Type 
+| -------- | -------- 
+| Title     | String |
+| Description   | String |
+| Date     | String | 
+| Image    | UIImage |
+| Link to Tickets    | URL  |
+| Location   | Map Location |
+| Users going   | Array  |
+| Host   | User  |
+#### Organization (Subclass of User)
+| Property | Type 
+| -------- | -------- 
+| Name     | String |
+| Description   | String |
+| Profile Image    | UIImage | 
+
+#### Article
+| Property | Type 
+| -------- | -------- 
+| Title     | String |
+| Content   | String |
+| Date     | String | 
+| Images    | UIImage Array|
+| Link to Article    | URL  |
+| Author  | String |
+| Publisher   | Org |
+
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Article Feed
+    - (Read/GET)
+- Events Feed
+    - (Read/GET)
+- Create Event
+    - (Create/POST) Create new event (Orgs only)
+- Event View
+    - (Create/GET) Save an event
+    - (Delete) Delete saved event
+    - (Update/Put) Edit event (Orgs only)
+- Article View
+    - (Create/GET) Save an article
+    - (Delete) Delete saved article
+- Profile View
+    - (Read/GET) Logged in user
+    - (Update/PUT) Update user info
+
+## Updates
+### Sprint1 - (Week 10)
+- Created project
+- Created the basic navigation
+- Setup table views for the Home feed and Events feed
+- Plan for next week
+   - Meet to work together
+   - Setup the Parse database
+   - Create login
+   - Begin development of different pages
+- Basic navigation image:
+<br />
+<img src="https://i.imgur.com/6wOkgcr.jpg" width=300>
+
