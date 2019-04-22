@@ -165,6 +165,6 @@ An app that allows users to read news articles from UT News sites such as the Da
     - (Read/GET) Logged in user
     - (Update/PUT) Update user info
     
-##Updates
-###Sprint1
-###Sprint2
+## Updates
+### Sprint1
+### Sprint2
