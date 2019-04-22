@@ -19,16 +19,20 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        articleTableView.delegate = self
+        articleTableView.dataSource = self
     }
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
+    
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = articleTableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+        return cell
     }
     
 

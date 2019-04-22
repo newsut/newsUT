@@ -10,22 +10,30 @@ import UIKit
 
 class EventsFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+
     @IBOutlet weak var eventsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        eventsTableView.dataSource = self
+        eventsTableView.delegate = self
     }
     
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = eventsTableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
+        return cell
     }
+    
+
+
     
     /*
     // MARK: - Navigation
