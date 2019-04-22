@@ -5,10 +5,10 @@ newsUT Team - README
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
-2. [Updates](#Updates)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Updates](#Updates)
 
 ## Overview
 ### Description
@@ -164,7 +164,7 @@ An app that allows users to read news articles from UT News sites such as the Da
 - Profile View
     - (Read/GET) Logged in user
     - (Update/PUT) Update user info
-    
+
 ## Updates
 ### Sprint1 - (Week 10)
 - Created project
@@ -175,3 +175,6 @@ An app that allows users to read news articles from UT News sites such as the Da
    - Setup the Parse database
    - Create login
    - Begin development of different pages
+- Basic navigation image:
+![](https://i.imgur.com/6wOkgcr.jpg)
+
