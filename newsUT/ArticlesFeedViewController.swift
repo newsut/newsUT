@@ -17,7 +17,15 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    
+        let date = Foundation.Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM d"
+        let currentDate = dateFormatter.string(from: date)
+        self.navigationItem.title = currentDate
+        
+        
         // Do any additional setup after loading the view.
         articleTableView.delegate = self
         articleTableView.dataSource = self
