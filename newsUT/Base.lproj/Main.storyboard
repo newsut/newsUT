@@ -154,6 +154,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="jc9-HE-qxy" kind="relationship" relationship="viewControllers" id="ZUb-LZ-lGZ"/>
@@ -307,11 +309,11 @@
             </objects>
             <point key="canvasLocation" x="599" y="-628"/>
         </scene>
-        <!--Item-->
+        <!--Articles-->
         <scene sceneID="JPX-oe-ZRD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jc9-HE-qxy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mko-ax-8aB"/>
+                    <tabBarItem key="tabBarItem" title="Articles" id="mko-ax-8aB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Nnc-vK-SuC">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -326,11 +328,11 @@
             </objects>
             <point key="canvasLocation" x="-631.20000000000005" y="909.89505247376314"/>
         </scene>
-        <!--Item-->
+        <!--Events-->
         <scene sceneID="n0z-xx-Fi8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbb-vU-hEP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HQK-ny-kLi"/>
+                    <tabBarItem key="tabBarItem" title="Events" id="HQK-ny-kLi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ipb-iI-bBa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -345,11 +347,11 @@
             </objects>
             <point key="canvasLocation" x="148" y="909.89505247376314"/>
         </scene>
-        <!--Item-->
+        <!--Newsletters-->
         <scene sceneID="grq-Ma-bxT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zwi-NH-jmj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cGe-UI-c4F"/>
+                    <tabBarItem key="tabBarItem" title="Newsletters" id="cGe-UI-c4F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v7Y-rz-Pty">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -364,11 +366,11 @@
             </objects>
             <point key="canvasLocation" x="1001" y="910"/>
         </scene>
-        <!--Item-->
+        <!--Discover-->
         <scene sceneID="NWE-UO-mZi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LuH-UD-boE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="T9E-sb-ffM"/>
+                    <tabBarItem key="tabBarItem" title="Discover" id="T9E-sb-ffM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="13a-3t-yuP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
