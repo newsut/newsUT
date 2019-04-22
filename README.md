@@ -176,5 +176,6 @@ An app that allows users to read news articles from UT News sites such as the Da
    - Create login
    - Begin development of different pages
 - Basic navigation image:
+<br />
 ![](https://i.imgur.com/6wOkgcr.jpg)
 
