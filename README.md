@@ -8,6 +8,7 @@ newsUT Team - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+2. [Updates](#Updates)
 
 ## Overview
 ### Description
@@ -163,3 +164,7 @@ An app that allows users to read news articles from UT News sites such as the Da
 - Profile View
     - (Read/GET) Logged in user
     - (Update/PUT) Update user info
+    
+##Updates
+###Sprint1
+###Sprint2
