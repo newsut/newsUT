@@ -40,6 +40,8 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = articleTableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+        
+        
         return cell
     }
     

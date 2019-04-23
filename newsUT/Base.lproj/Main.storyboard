@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Article View Controller-->
+        <!--Title-->
         <scene sceneID="diM-GR-49H">
             <objects>
                 <viewController id="ed0-cp-GzW" customClass="ArticleViewController" customModule="newsUT" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,6 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5k0-Tj-d5k"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="BSb-Rz-SzM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Oe-2v-Ieh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,6 +124,7 @@
                                             <outlet property="eventLabel" destination="WZi-gI-5JM" id="QRr-ZE-IqA"/>
                                             <outlet property="locationLabel" destination="mNN-Mb-xug" id="PZk-d7-1hr"/>
                                             <outlet property="timedateLabel" destination="qF0-od-2fZ" id="Df5-Io-pJs"/>
+                                            <segue destination="xTa-qp-AOm" kind="show" id="wbg-1c-5Xw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -256,6 +258,7 @@
                                             <outlet property="authorLabel" destination="Azl-dK-6gJ" id="hM1-V5-QuL"/>
                                             <outlet property="dateLabel" destination="k3Z-3T-XL5" id="WgI-NX-zq8"/>
                                             <outlet property="headlineLabel" destination="8jh-Fc-8tz" id="33s-Pv-fig"/>
+                                            <segue destination="ed0-cp-GzW" kind="show" id="PMN-4F-oXc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -270,7 +273,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E9n-VJ-vv6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="q2w-67-NcM"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="q2w-67-NcM"/>
                     <connections>
                         <outlet property="articleTableView" destination="uqX-4c-P0w" id="XW8-UB-j4l"/>
                     </connections>
@@ -313,11 +316,12 @@
         <scene sceneID="JPX-oe-ZRD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jc9-HE-qxy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Articles" id="mko-ax-8aB"/>
+                    <tabBarItem key="tabBarItem" title="Articles" image="Articles" id="mko-ax-8aB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Nnc-vK-SuC">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -332,11 +336,12 @@
         <scene sceneID="n0z-xx-Fi8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbb-vU-hEP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="HQK-ny-kLi"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="Events" id="HQK-ny-kLi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ipb-iI-bBa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -351,11 +356,12 @@
         <scene sceneID="grq-Ma-bxT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zwi-NH-jmj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Newsletters" id="cGe-UI-c4F"/>
+                    <tabBarItem key="tabBarItem" title="Newsletters" image="Newletters" id="cGe-UI-c4F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v7Y-rz-Pty">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -370,11 +376,12 @@
         <scene sceneID="NWE-UO-mZi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LuH-UD-boE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" id="T9E-sb-ffM"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="Discover" id="T9E-sb-ffM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="13a-3t-yuP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -386,4 +393,10 @@
             <point key="canvasLocation" x="1934" y="910"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Articles" width="20" height="20"/>
+        <image name="Discover" width="20" height="20"/>
+        <image name="Events" width="15" height="20"/>
+        <image name="Newletters" width="20" height="20"/>
+    </resources>
 </document>
