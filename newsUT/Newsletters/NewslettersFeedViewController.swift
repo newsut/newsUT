@@ -8,12 +8,27 @@
 
 import UIKit
 
-class NewslettersFeedViewController: UIViewController {
+class NewslettersFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var newslettersTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        newslettersTableView.delegate = self
+        newslettersTableView.dataSource = self
 
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = newslettersTableView.dequeueReusableCell(withIdentifier: "NewsletterCell") as! NewsletterCell
+        return cell
     }
     
 
@@ -26,5 +41,4 @@ class NewslettersFeedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
