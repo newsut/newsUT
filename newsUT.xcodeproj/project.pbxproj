@@ -11,8 +11,8 @@
 		2D50F011BEB0814F8177292A /* Pods_newsUTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DDDE925749B66CE553C9B9 /* Pods_newsUTTests.framework */; };
 		9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F6226548E7000AB3D8 /* ArticleCell.swift */; };
 		9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F8226548FA000AB3D8 /* EventCell.swift */; };
+		C258D9EA227CC53C002F6117 /* NewsletterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258D9E9227CC53C002F6117 /* NewsletterCell.swift */; };
 		C2E818DB226538AE00BDB4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */; };
-		C2E818DD226538AE00BDB4A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E818DC226538AE00BDB4A0 /* ViewController.swift */; };
 		C2E818E0226538AE00BDB4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E818DE226538AE00BDB4A0 /* Main.storyboard */; };
 		C2E818E2226538B100BDB4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E818E1226538B100BDB4A0 /* Assets.xcassets */; };
 		C2E818E5226538B100BDB4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E818E3226538B100BDB4A0 /* LaunchScreen.storyboard */; };
@@ -55,9 +55,9 @@
 		9898A6F6226548E7000AB3D8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		9898A6F8226548FA000AB3D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		9B9456EC572D48E43313172D /* Pods-newsUTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUTUITests/Pods-newsUTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C258D9E9227CC53C002F6117 /* NewsletterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterCell.swift; sourceTree = "<group>"; };
 		C2E818D7226538AE00BDB4A0 /* newsUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2E818DC226538AE00BDB4A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2E818DF226538AE00BDB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2E818E1226538B100BDB4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E818E4226538B100BDB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +132,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C258D9EB227CC6A4002F6117 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				9898A6F8226548FA000AB3D8 /* EventCell.swift */,
+				C2E8191622653D5C00BDB4A0 /* EventViewController.swift */,
+				C2E8190E22653D0700BDB4A0 /* EventsFeedViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		C258D9EC227CC6C5002F6117 /* Newsletters */ = {
+			isa = PBXGroup;
+			children = (
+				C258D9E9227CC53C002F6117 /* NewsletterCell.swift */,
+				C2E8191022653D1200BDB4A0 /* NewslettersFeedViewController.swift */,
+			);
+			path = Newsletters;
+			sourceTree = "<group>";
+		};
+		C258D9ED227CC6E0002F6117 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				9898A6F6226548E7000AB3D8 /* ArticleCell.swift */,
+				C2E8191422653D5100BDB4A0 /* ArticleViewController.swift */,
+				C2E8190C22653CFD00BDB4A0 /* ArticlesFeedViewController.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		C258D9EE227CC707002F6117 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8190822653BF400BDB4A0 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C258D9EF227CC723002F6117 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8191222653D2700BDB4A0 /* DiscoverFeedViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		C2E818CE226538AE00BDB4A0 = {
 			isa = PBXGroup;
 			children = (
@@ -157,22 +202,17 @@
 		C2E818D9226538AE00BDB4A0 /* newsUT */ = {
 			isa = PBXGroup;
 			children = (
-				C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */,
-				C2E818DC226538AE00BDB4A0 /* ViewController.swift */,
+				C258D9EE227CC707002F6117 /* Login */,
+				C258D9ED227CC6E0002F6117 /* Articles */,
+				C258D9EC227CC6C5002F6117 /* Newsletters */,
+				C258D9EB227CC6A4002F6117 /* Events */,
+				C258D9EF227CC723002F6117 /* Discover */,
 				C2E818DE226538AE00BDB4A0 /* Main.storyboard */,
-				9898A6F6226548E7000AB3D8 /* ArticleCell.swift */,
-				9898A6F8226548FA000AB3D8 /* EventCell.swift */,
-				C2E8191422653D5100BDB4A0 /* ArticleViewController.swift */,
-				C2E8191622653D5C00BDB4A0 /* EventViewController.swift */,
-				C2E8190C22653CFD00BDB4A0 /* ArticlesFeedViewController.swift */,
-				C2E8190E22653D0700BDB4A0 /* EventsFeedViewController.swift */,
-				C2E8191022653D1200BDB4A0 /* NewslettersFeedViewController.swift */,
-				C2E8191222653D2700BDB4A0 /* DiscoverFeedViewController.swift */,
-				C2E8190822653BF400BDB4A0 /* LoginViewController.swift */,
-				C2E818E1226538B100BDB4A0 /* Assets.xcassets */,
 				C2E818E3226538B100BDB4A0 /* LaunchScreen.storyboard */,
-				C2E818E6226538B100BDB4A0 /* Info.plist */,
+				C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */,
 				C2E8190A22653C6300BDB4A0 /* HomeTabBarController.swift */,
+				C2E818E1226538B100BDB4A0 /* Assets.xcassets */,
+				C2E818E6226538B100BDB4A0 /* Info.plist */,
 			);
 			path = newsUT;
 			sourceTree = "<group>";
@@ -399,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E8190922653BF400BDB4A0 /* LoginViewController.swift in Sources */,
-				C2E818DD226538AE00BDB4A0 /* ViewController.swift in Sources */,
+				C258D9EA227CC53C002F6117 /* NewsletterCell.swift in Sources */,
 				C2E8191322653D2700BDB4A0 /* DiscoverFeedViewController.swift in Sources */,
 				C2E8190D22653CFD00BDB4A0 /* ArticlesFeedViewController.swift in Sources */,
 				9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */,
