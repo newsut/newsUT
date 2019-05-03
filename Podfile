@@ -6,7 +6,8 @@ target 'newsUT' do
   use_frameworks!
 
   # Pods for newsUT
-
+  pod 'Parse'
+  
   target 'newsUTTests' do
     inherit! :search_paths
     # Pods for testing
