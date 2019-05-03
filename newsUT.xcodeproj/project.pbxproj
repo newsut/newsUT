@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15A6665EE4F61DACAAF7D782 /* Pods_newsUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */; };
 		2D50F011BEB0814F8177292A /* Pods_newsUTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DDDE925749B66CE553C9B9 /* Pods_newsUTTests.framework */; };
+		984E0070227CF006002F565E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E006F227CF006002F565E /* CreateEventViewController.swift */; };
 		9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F6226548E7000AB3D8 /* ArticleCell.swift */; };
 		9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F8226548FA000AB3D8 /* EventCell.swift */; };
 		C258D9EA227CC53C002F6117 /* NewsletterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258D9E9227CC53C002F6117 /* NewsletterCell.swift */; };
@@ -52,6 +53,7 @@
 		33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FA8721BADFFE274750B46D /* Pods_newsUTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2AEBC026CA8F12F39D1528 /* Pods-newsUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUT/Pods-newsUT.debug.xcconfig"; sourceTree = "<group>"; };
+		984E006F227CF006002F565E /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateEventViewController.swift; path = Events/CreateEventViewController.swift; sourceTree = "<group>"; };
 		9898A6F6226548E7000AB3D8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		9898A6F8226548FA000AB3D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		9B9456EC572D48E43313172D /* Pods-newsUTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUTUITests/Pods-newsUTUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				C258D9EB227CC6A4002F6117 /* Events */,
 				C258D9EF227CC723002F6117 /* Discover */,
 				C2E818DE226538AE00BDB4A0 /* Main.storyboard */,
+				984E006F227CF006002F565E /* CreateEventViewController.swift */,
 				C2E818E3226538B100BDB4A0 /* LaunchScreen.storyboard */,
 				C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */,
 				C2E8190A22653C6300BDB4A0 /* HomeTabBarController.swift */,
@@ -469,6 +472,7 @@
 				C2E8190D22653CFD00BDB4A0 /* ArticlesFeedViewController.swift in Sources */,
 				9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */,
 				C2E8191522653D5100BDB4A0 /* ArticleViewController.swift in Sources */,
+				984E0070227CF006002F565E /* CreateEventViewController.swift in Sources */,
 				C2E8191722653D5C00BDB4A0 /* EventViewController.swift in Sources */,
 				C2E8191122653D1200BDB4A0 /* NewslettersFeedViewController.swift in Sources */,
 				C2E8190F22653D0700BDB4A0 /* EventsFeedViewController.swift in Sources */,
