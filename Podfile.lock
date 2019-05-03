@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 22ea55fe13d20314d7144c5a24230144413bc65c
+PODS:
+  - RSKPlaceholderTextView (4.0.0)
+
+DEPENDENCIES:
+  - RSKPlaceholderTextView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RSKPlaceholderTextView
+
+SPEC CHECKSUMS:
+  RSKPlaceholderTextView: 15f1dc1883e103ea605874b863f19ff6b08496d5
+
+PODFILE CHECKSUM: ae1b884f4b35e6e116f1b791e3b01b90332b0d3d
 
 COCOAPODS: 1.5.3

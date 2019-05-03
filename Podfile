@@ -6,6 +6,7 @@ target 'newsUT' do
   use_frameworks!
 
   # Pods for newsUT
+  pod 'RSKPlaceholderTextView'
 
   target 'newsUTTests' do
     inherit! :search_paths
