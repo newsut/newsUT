@@ -1,26 +1,31 @@
 //
-//  LoginViewController.swift
+//  CreateAccountViewController.swift
 //  newsUT
 //
-//  Created by Akarsh Kumar on 4/15/19.
+//  Created by Yash Kakodkar on 5/11/19.
 //  Copyright © 2019 Akarsh Kumar. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLogin(_ sender: Any) {
+    @IBAction func onCreate(_ sender: Any) {
     }
     
+    @IBAction func onCancel(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

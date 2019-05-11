@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15A6665EE4F61DACAAF7D782 /* Pods_newsUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */; };
 		2D50F011BEB0814F8177292A /* Pods_newsUTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DDDE925749B66CE553C9B9 /* Pods_newsUTTests.framework */; };
+		98475EEB22878006002382AD /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98475EEA22878006002382AD /* CreateAccountViewController.swift */; };
 		984E0070227CF006002F565E /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E006F227CF006002F565E /* CreateEventViewController.swift */; };
 		9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F6226548E7000AB3D8 /* ArticleCell.swift */; };
 		9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F8226548FA000AB3D8 /* EventCell.swift */; };
@@ -53,6 +54,7 @@
 		33C18CC4653B7CA6E7143968 /* Pods_newsUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FA8721BADFFE274750B46D /* Pods_newsUTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newsUTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2AEBC026CA8F12F39D1528 /* Pods-newsUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUT/Pods-newsUT.debug.xcconfig"; sourceTree = "<group>"; };
+		98475EEA22878006002382AD /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		984E006F227CF006002F565E /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateEventViewController.swift; path = Events/CreateEventViewController.swift; sourceTree = "<group>"; };
 		9898A6F6226548E7000AB3D8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		9898A6F8226548FA000AB3D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E8190822653BF400BDB4A0 /* LoginViewController.swift */,
+				98475EEA22878006002382AD /* CreateAccountViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98475EEB22878006002382AD /* CreateAccountViewController.swift in Sources */,
 				C2E8190922653BF400BDB4A0 /* LoginViewController.swift in Sources */,
 				C258D9EA227CC53C002F6117 /* NewsletterCell.swift in Sources */,
 				C2E8191322653D2700BDB4A0 /* DiscoverFeedViewController.swift in Sources */,
