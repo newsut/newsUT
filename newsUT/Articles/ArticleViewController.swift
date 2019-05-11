@@ -10,6 +10,13 @@ import UIKit
 
 class ArticleViewController: UIViewController {
 
+    @IBOutlet weak var articleImage: UIImageView!
+    @IBOutlet weak var articleTitle: UILabel!
+    @IBOutlet weak var articleDate: UILabel!
+    @IBOutlet weak var articleAuthor: UILabel!
+    @IBOutlet weak var articleStory: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

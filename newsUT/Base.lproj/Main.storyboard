@@ -83,6 +83,13 @@
                         <viewLayoutGuide key="safeArea" id="5k0-Tj-d5k"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="BSb-Rz-SzM"/>
+                    <connections>
+                        <outlet property="articleAuthor" destination="O0M-BO-qpH" id="uh5-TK-KVJ"/>
+                        <outlet property="articleDate" destination="Fqc-9w-fWS" id="Jn2-Aq-20a"/>
+                        <outlet property="articleImage" destination="nfq-hc-Bxg" id="PS2-68-PyC"/>
+                        <outlet property="articleStory" destination="sJD-Bl-XaK" id="Zoh-hn-bVO"/>
+                        <outlet property="articleTitle" destination="1c9-4h-5eX" id="vZz-9G-K97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Oe-2v-Ieh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -666,6 +673,9 @@
                                                 <state key="normal" title="DATE &amp; TIME">
                                                     <color key="titleColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onDateTime:" destination="xTa-qp-AOm" eventType="touchUpInside" id="xwj-Sb-wUq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLJ-n6-l2O">
                                                 <rect key="frame" x="89.5" y="121" width="56" height="29"/>
@@ -673,6 +683,9 @@
                                                 <state key="normal" title="Location">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onLocation:" destination="xTa-qp-AOm" eventType="touchUpInside" id="7t4-7Z-e7u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-tO-KQQ">
                                                 <rect key="frame" x="89.5" y="156.5" width="66" height="29"/>
@@ -680,6 +693,9 @@
                                                 <state key="normal" title="Ticket link">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onTicket:" destination="xTa-qp-AOm" eventType="touchUpInside" id="vqm-XA-62E"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -762,6 +778,18 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bg8-yX-ICF"/>
                     </view>
+                    <connections>
+                        <outlet property="aboutEvent" destination="i7Z-W7-Ymu" id="ZR1-Mb-Tni"/>
+                        <outlet property="dateTimeBUtton" destination="Pc0-Be-RVH" id="anG-Ay-7ga"/>
+                        <outlet property="eventDate" destination="RmI-UG-kDW" id="vTN-UL-3IR"/>
+                        <outlet property="eventImage" destination="hzb-c2-lfc" id="Gir-qn-oZ9"/>
+                        <outlet property="eventMonth" destination="nhd-ST-kcN" id="fwX-Nz-XwI"/>
+                        <outlet property="eventTitle" destination="kWL-1g-qOQ" id="rgl-xW-nbn"/>
+                        <outlet property="locationButton" destination="WLJ-n6-l2O" id="kA1-5g-Dk0"/>
+                        <outlet property="organizationImage" destination="XMt-6j-t7s" id="q2s-6x-XZ5"/>
+                        <outlet property="organizationName" destination="MaA-mH-GPB" id="ZIk-le-jm9"/>
+                        <outlet property="ticketButton" destination="HCe-tO-KQQ" id="cG7-bb-rQ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsX-hf-d1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
