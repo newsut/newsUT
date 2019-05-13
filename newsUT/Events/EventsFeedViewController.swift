@@ -53,7 +53,10 @@ class EventsFeedViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.locationLabel.text = event["location"] as? String
         cell.eventLabel.text = event["title"] as? String
-        cell.timedateLabel.text = event["date"] as? String
+        let date = event["date"] as? String
+        let dateIndex = date?.firstIndex(of: "t")
+        let dateText = String(date![..<dateIndex!])
+        cell.timedateLabel.text = dateText
         
         let imageFile = event["image"] as? PFFileObject
         
