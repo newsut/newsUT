@@ -39,6 +39,10 @@ class EventViewController: UIViewController {
     }
     @IBAction func onTicket(_ sender: Any) {
     }
+    @IBAction func backPressed(_ sender: UIButton) {
+        
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

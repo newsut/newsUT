@@ -180,7 +180,8 @@ func getNewslettersQuery() -> PFQuery<PFObject>{
 func getEventsQuery() -> PFQuery<PFObject>{
     let query = PFQuery(className: "Event")
     //query.includeKeys(["author", "comments", "comments.user"])
-    query.includeKeys(["author"])
+    query.includeKeys(["author","text", "title","location","date","image"])
+    
     query.limit = 20
     return query
 }

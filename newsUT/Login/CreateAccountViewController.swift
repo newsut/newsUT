@@ -39,17 +39,15 @@ class CreateAccountViewController: UIViewController {
         
         user.signUpInBackground {(success, error) in
             if(success){
-                self.performSegue(withIdentifier: "signupSegue", sender: nil)
+                self.dismiss(animated: true, completion: nil)
             }else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
     
-    
     }
     
     @IBAction func onCancel(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
     /*

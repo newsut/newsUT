@@ -20,14 +20,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogin(_ sender: Any) {
-        let username = usernameTextField.text
-        let password = passwordTextField.text
-        
-        PFUser.logInWithUsername(inBackground: username!, password: password!) { (user, error) in
-            if(user != nil){
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }else {
-                print("Error: \(error?.localizedDescription)")
+        if(usernameTextField.text != nil && passwordTextField.text != nil){
+            login(username: usernameTextField.text!, password: passwordTextField.text!)
+            PFUser.logInWithUsername(inBackground: usernameTextField.text!, password: passwordTextField.text!) { (user, error) in
+                if(error==nil){
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
             }
         }
     
