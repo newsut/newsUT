@@ -115,16 +115,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISh-pm-1gE">
-                                                    <rect key="frame" x="15" y="15.333333333333343" width="345" height="250.00000000000003"/>
+                                                    <rect key="frame" x="15" y="15.333333333333343" width="384" height="250.00000000000003"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-zZ-K6B">
-                                                            <rect key="frame" x="79.666666666666671" y="216" width="255.33333333333331" height="18"/>
+                                                            <rect key="frame" x="79.666666666666657" y="216" width="294.33333333333337" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-d2-wxP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="200"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="200"/>
                                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -144,7 +144,6 @@
                                                         <constraint firstItem="c2K-d2-wxP" firstAttribute="leading" secondItem="ISh-pm-1gE" secondAttribute="leading" id="4Yi-iN-a03"/>
                                                         <constraint firstAttribute="bottom" secondItem="Gc4-zZ-K6B" secondAttribute="bottom" constant="16" id="52z-Ha-lVH"/>
                                                         <constraint firstAttribute="bottom" secondItem="AwR-jq-NSi" secondAttribute="bottom" constant="14" id="F00-Nq-GXn"/>
-                                                        <constraint firstAttribute="width" constant="345" id="GLR-JM-nlJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="c2K-d2-wxP" secondAttribute="bottom" constant="50" id="IOP-jb-9gL"/>
                                                         <constraint firstItem="AwR-jq-NSi" firstAttribute="leading" secondItem="ISh-pm-1gE" secondAttribute="leading" constant="10" id="K9i-3h-oV6"/>
                                                         <constraint firstAttribute="trailing" secondItem="c2K-d2-wxP" secondAttribute="trailing" id="LKw-TH-wDn"/>
@@ -164,6 +163,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ISh-pm-1gE" secondAttribute="bottom" constant="15" id="8Wl-lf-nSQ"/>
+                                                <constraint firstItem="ISh-pm-1gE" firstAttribute="width" secondItem="pTQ-v7-59R" secondAttribute="width" constant="-30" id="9HL-Hu-7XM"/>
                                                 <constraint firstItem="ISh-pm-1gE" firstAttribute="leading" secondItem="pTQ-v7-59R" secondAttribute="leading" constant="15" id="W1e-On-aX7"/>
                                                 <constraint firstItem="ISh-pm-1gE" firstAttribute="top" secondItem="pTQ-v7-59R" secondAttribute="top" constant="15" id="cNM-kQ-aDU"/>
                                             </constraints>
