@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
   - Bolts/Tasks (1.9.0)
   - Parse (1.17.2):
     - Parse/Core (= 1.17.2)
@@ -7,20 +10,25 @@ PODS:
   - RSKPlaceholderTextView (4.0.0)
 
 DEPENDENCIES:
+  - AlamofireImage
   - Parse
   - RSKPlaceholderTextView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - Bolts
     - Parse
     - RSKPlaceholderTextView
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
   RSKPlaceholderTextView: 15f1dc1883e103ea605874b863f19ff6b08496d5
 
-PODFILE CHECKSUM: ecee219f6ac4d89a40e14655b6a3a05a0198adb2
+PODFILE CHECKSUM: 2a2bc78ab568bfea16db4aff5ec0667fe0d0c80f
 
 COCOAPODS: 1.5.3

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CreateAccountViewController: UIViewController {
 
@@ -20,6 +21,31 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func onCreate(_ sender: Any) {
+    
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextField.text
+        user["Name"] = nameTextField.text
+        
+//        let imageData: Data!
+//        if(profileImageView.image != UIImage(named: "ProfilePicEdit")){
+//            imageData = profileImageView.image!.pngData()
+//        }else {
+//            let defaultProfilePic = UIImage(named: "DefaultProfilePic")
+//            imageData = defaultProfilePic!.pngData()
+//        }
+//        let file = PFFileObject(data: imageData!)
+//        user["ProfileImage"] =  file
+        
+        user.signUpInBackground {(success, error) in
+            if(success){
+                self.performSegue(withIdentifier: "signupSegue", sender: nil)
+            }else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+    
+    
     }
     
     @IBAction func onCancel(_ sender: Any) {

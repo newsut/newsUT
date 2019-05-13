@@ -325,10 +325,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
                                                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="6eE-Sb-xYV" secondAttribute="height" multiplier="2:1" id="DPV-T0-qlD"/>
                                                         <constraint firstAttribute="width" constant="375" id="mZ0-eK-FSr"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Gr6-o2-cUX" appends="YES" id="7sz-El-ANR"/>
+                                                    </connections>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -449,9 +453,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="createButton" destination="bXo-GF-1mL" id="7Vh-Ug-Pyg"/>
+                        <outlet property="eventImage" destination="6eE-Sb-xYV" id="2ry-wY-y5n"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBc-cd-Ezq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gr6-o2-cUX">
+                    <connections>
+                        <action selector="onCameraTap:" destination="Fdc-AZ-gFG" id="bcW-Lj-eAe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1024.8" y="2348.2758620689656"/>
         </scene>
@@ -806,9 +816,15 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vi6-jO-S5v">
                                 <rect key="frame" x="82" y="264" width="209" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0uQ-ad-Pfd">
                                 <rect key="frame" x="82" y="318" width="209" height="30"/>
@@ -864,6 +880,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onSkipAccount:" destination="1SL-f1-N94" eventType="touchUpInside" id="AUc-4g-8bO"/>
                                     <segue destination="MMq-nT-b4T" kind="show" id="ZOb-I0-HD0"/>
                                 </connections>
                             </button>

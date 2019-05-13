@@ -8,6 +8,7 @@ target 'newsUT' do
   # Pods for newsUT
   pod 'Parse'
   pod 'RSKPlaceholderTextView'
+  pod 'AlamofireImage'
   
   target 'newsUTTests' do
     inherit! :search_paths
