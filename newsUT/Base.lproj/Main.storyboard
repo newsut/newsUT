@@ -224,25 +224,25 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZi-gI-5JM">
-                                                    <rect key="frame" x="113" y="11" width="258" height="24"/>
+                                                    <rect key="frame" x="113" y="11" width="219" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-Mb-xug">
-                                                    <rect key="frame" x="113" y="38" width="258" height="18"/>
+                                                    <rect key="frame" x="113" y="38" width="219" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME &amp; DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF0-od-2fZ">
-                                                    <rect key="frame" x="113" y="59" width="258" height="18"/>
+                                                    <rect key="frame" x="113" y="59" width="219" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="textColor" red="0.77254901960784317" green="0.29803921568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pm-rA-hWW">
-                                                    <rect key="frame" x="381" y="41" width="18" height="30"/>
+                                                    <rect key="frame" x="342" y="41" width="18" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="18" id="NES-5a-k72"/>
                                                         <constraint firstAttribute="height" constant="30" id="ppo-dv-sY8"/>
@@ -739,27 +739,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-mH-GPB">
-                                                <rect key="frame" x="118" y="51.5" width="124" height="17"/>
+                                                <rect key="frame" x="117.5" y="51.5" width="124" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40P-gx-aSJ">
-                                                <rect key="frame" x="34.5" y="89.5" width="20.5" height="20.5"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="40P-gx-aSJ">
+                                                <rect key="frame" x="35" y="91" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="40P-gx-aSJ" secondAttribute="height" multiplier="1:1" id="HcX-jU-9rT"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-VZ-HUy">
-                                                <rect key="frame" x="34.5" y="125" width="20.5" height="20.5"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-VZ-HUy">
+                                                <rect key="frame" x="35" y="126" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8Kc-VZ-HUy" secondAttribute="height" multiplier="1:1" id="4wb-Db-04q"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-6j-t7s">
-                                                <rect key="frame" x="89.5" y="50" width="20.5" height="20.5"/>
+                                                <rect key="frame" x="89.5" y="50" width="20" height="20"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XMt-6j-t7s" secondAttribute="height" multiplier="1:1" id="82S-94-xaZ"/>
@@ -770,15 +768,14 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-BS-cTH">
-                                                <rect key="frame" x="34.5" y="160.5" width="20.5" height="20.5"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tickets" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-BS-cTH">
+                                                <rect key="frame" x="35" y="161" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="WhZ-BS-cTH" secondAttribute="height" multiplier="1:1" id="JjH-fO-vH8"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-Be-RVH">
-                                                <rect key="frame" x="89.5" y="85.5" width="86" height="29"/>
+                                                <rect key="frame" x="89.5" y="85" width="86" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                 <state key="normal" title="DATE &amp; TIME">
                                                     <color key="titleColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -788,7 +785,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLJ-n6-l2O">
-                                                <rect key="frame" x="89.5" y="121" width="56" height="29"/>
+                                                <rect key="frame" x="89.5" y="121.5" width="56" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Location">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1185,10 +1182,13 @@ The race course winds through the historic Forty Acres and area neighborhoods as
     </scenes>
     <resources>
         <image name="Articles" width="20" height="20"/>
+        <image name="Clock" width="18" height="18"/>
         <image name="Discover" width="20" height="20"/>
         <image name="Events" width="15" height="20"/>
         <image name="Newletters" width="20" height="20"/>
         <image name="Saved" width="18" height="30"/>
+        <image name="Tickets" width="19" height="19"/>
         <image name="chooseImage" width="375" height="188"/>
+        <image name="location" width="14" height="20"/>
     </resources>
 </document>
