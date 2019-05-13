@@ -13,6 +13,7 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://news-ut.herokuapp.com/parse"
             })
         )
+        
+        signupUser(username: "akarshkumar0101", password: "Minecraft1")
+        
         
         return true
     }
