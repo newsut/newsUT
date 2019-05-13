@@ -56,7 +56,21 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = articleTableView.dequeueReusableCell(withIdentifier: "ArticleCell") as! ArticleCell
+        let article = articles[indexPath.row]
+        cell.authorLabel.text = (article["author"] as! PFUser).username
+        cell.headlineLabel.text = article["title"] as! String?
+        cell.dateLabel.text = article["date"] as! String?
         
+        
+        let imageFile = article["image"] as? PFFileObject
+        
+        
+        let urlString = imageFile?.url!
+        if(urlString != nil){
+            let url = URL(string: urlString!)!
+            
+            cell.articleImageView.af_setImage(withURL: url)
+        }
         
         return cell
     }

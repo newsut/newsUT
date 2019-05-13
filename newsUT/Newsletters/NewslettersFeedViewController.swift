@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class NewslettersFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -41,6 +42,25 @@ class NewslettersFeedViewController: UIViewController, UITableViewDataSource, UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = newslettersTableView.dequeueReusableCell(withIdentifier: "NewsletterCell") as! NewsletterCell
+        
+        /*
+        let newsletter = newsletters[indexPath.row]
+        cell.authorLabel.text = (newsletter["author"] as! PFUser).username
+        cell.headlineLabel.text = newsletter["title"] as! String?
+        cell.dateLabel.text = newsletter["date"] as! String?
+        
+        
+        let imageFile = newsletter["image"] as? PFFileObject
+        
+        
+        let urlString = imageFile?.url!
+        if(urlString != nil){
+            let url = URL(string: urlString!)!
+            
+            cell.articleImageView.af_setImage(withURL: url)
+        }
+ */
+        
         return cell
     }
     
