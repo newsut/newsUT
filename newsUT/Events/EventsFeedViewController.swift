@@ -50,35 +50,33 @@ class EventsFeedViewController: UIViewController, UITableViewDataSource, UITable
         let cell = eventsTableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
         
         let event = events[indexPath.row]
-        /*
-        cell.authorLabel.text = (event["author"] as! PFUser).username
-        cell.headlineLabel.text = event["title"] as! String?
-        cell.dateLabel.text = event["date"] as! String?
         
+        
+        cell.locationLabel.text = event["location"] as? String
+        cell.eventLabel.text = event["title"] as? String
+        cell.timedateLabel.text = event["date"] as? String
         
         let imageFile = event["image"] as? PFFileObject
-        
         
         let urlString = imageFile?.url!
         if(urlString != nil){
             let url = URL(string: urlString!)!
             
-            cell.articleImageView.af_setImage(withURL: url)
+            cell.eventImageView.af_setImage(withURL: url)
         }
-
         
-        @IBOutlet weak var eventImageView: UIImageView!
-        @IBOutlet weak var timedateLabel: UILabel!
-        @IBOutlet weak var locationLabel: UILabel!
-        @IBOutlet weak var eventLabel: UILabel!
-        @IBOutlet weak var saveButton: UIButton!
- 
- */
         
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "EventViewController") as? EventViewController {
+            viewController.event = events[indexPath.row]
+            self.present(viewController, animated: true, completion: nil)
+        }
+    }
 
     
     /*
