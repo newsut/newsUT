@@ -780,7 +780,7 @@
                                                     <color key="titleColor" red="0.7725490196" green="0.29803921570000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onDateTime:" destination="xTa-qp-AOm" eventType="touchUpInside" id="xwj-Sb-wUq"/>
+                                                    <action selector="onDateTime:" destination="xTa-qp-AOm" eventType="touchUpInside" id="TBh-Uy-wOb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLJ-n6-l2O">
@@ -790,7 +790,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onLocation:" destination="xTa-qp-AOm" eventType="touchUpInside" id="7t4-7Z-e7u"/>
+                                                    <action selector="onLocation:" destination="xTa-qp-AOm" eventType="touchUpInside" id="r1T-7j-Aob"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-tO-KQQ">
@@ -800,7 +800,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onTicket:" destination="xTa-qp-AOm" eventType="touchUpInside" id="vqm-XA-62E"/>
+                                                    <action selector="onTicket:" destination="xTa-qp-AOm" eventType="touchUpInside" id="sOl-ah-2g8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -886,7 +886,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                     </view>
                     <connections>
                         <outlet property="aboutEvent" destination="i7Z-W7-Ymu" id="ZR1-Mb-Tni"/>
-                        <outlet property="dateTimeBUtton" destination="Pc0-Be-RVH" id="anG-Ay-7ga"/>
+                        <outlet property="dateTimeButton" destination="Pc0-Be-RVH" id="vVa-WY-68w"/>
                         <outlet property="eventDate" destination="RmI-UG-kDW" id="vTN-UL-3IR"/>
                         <outlet property="eventImage" destination="hzb-c2-lfc" id="Gir-qn-oZ9"/>
                         <outlet property="eventMonth" destination="nhd-ST-kcN" id="fwX-Nz-XwI"/>

@@ -114,6 +114,9 @@ class CreateEventViewController: UITableViewController, UIImagePickerControllerD
 
 
     @IBAction func onCreate(_ sender: Any) {
+    
+    
+    
     }
     
     @IBAction func onCancel(_ sender: Any) {
