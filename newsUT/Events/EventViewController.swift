@@ -44,7 +44,8 @@ class EventViewController: UIViewController {
         }
         
         self.eventTitle.text = eventObject["title"] as? String
-        self.organizationName.text = eventObject["author"] as? String
+        let user = eventObject["author"] as! PFUser
+        self.organizationName.text = user.username
         self.aboutEvent.text = eventObject["text"] as? String
         
         let months:[String] = ["JAN","FEB","MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "DEC"];

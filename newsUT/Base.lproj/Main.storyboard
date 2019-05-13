@@ -885,7 +885,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                     <constraint firstItem="hzb-c2-lfc" firstAttribute="centerX" secondItem="raq-UT-1hv" secondAttribute="centerX" id="lqH-wf-MeS"/>
                                     <constraint firstAttribute="bottom" secondItem="hzb-c2-lfc" secondAttribute="bottom" constant="353" id="mJi-wi-4yE"/>
                                     <constraint firstItem="hzb-c2-lfc" firstAttribute="leading" secondItem="raq-UT-1hv" secondAttribute="leading" id="r57-fJ-5dH"/>
-                                    <constraint firstAttribute="bottom" secondItem="i7Z-W7-Ymu" secondAttribute="bottom" constant="15" id="v4q-cu-OO8"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="i7Z-W7-Ymu" secondAttribute="bottom" constant="15" id="v4q-cu-OO8"/>
                                     <constraint firstItem="hzb-c2-lfc" firstAttribute="top" secondItem="raq-UT-1hv" secondAttribute="top" id="vWT-qD-dKh"/>
                                     <constraint firstItem="HCV-lV-TaT" firstAttribute="leading" secondItem="raq-UT-1hv" secondAttribute="leading" constant="15" id="zKj-fH-iU9"/>
                                 </constraints>
