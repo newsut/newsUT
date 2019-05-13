@@ -14,6 +14,7 @@
 		9898A6F7226548E7000AB3D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F6226548E7000AB3D8 /* ArticleCell.swift */; };
 		9898A6F9226548FA000AB3D8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898A6F8226548FA000AB3D8 /* EventCell.swift */; };
 		C258D9EA227CC53C002F6117 /* NewsletterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258D9E9227CC53C002F6117 /* NewsletterCell.swift */; };
+		C280C79C22892E5B00E86EC8 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C79B22892E5A00E86EC8 /* Server.swift */; };
 		C2E818DB226538AE00BDB4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */; };
 		C2E818E0226538AE00BDB4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E818DE226538AE00BDB4A0 /* Main.storyboard */; };
 		C2E818E2226538B100BDB4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E818E1226538B100BDB4A0 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		9898A6F8226548FA000AB3D8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		9B9456EC572D48E43313172D /* Pods-newsUTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsUTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsUTUITests/Pods-newsUTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C258D9E9227CC53C002F6117 /* NewsletterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterCell.swift; sourceTree = "<group>"; };
+		C280C79B22892E5A00E86EC8 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Server.swift; path = ../Server.swift; sourceTree = "<group>"; };
 		C2E818D7226538AE00BDB4A0 /* newsUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E818DF226538AE00BDB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				C258D9EB227CC6A4002F6117 /* Events */,
 				C258D9EF227CC723002F6117 /* Discover */,
 				C2E818DE226538AE00BDB4A0 /* Main.storyboard */,
+				C280C79B22892E5A00E86EC8 /* Server.swift */,
 				984E006F227CF006002F565E /* CreateEventViewController.swift */,
 				C2E818E3226538B100BDB4A0 /* LaunchScreen.storyboard */,
 				C2E818DA226538AE00BDB4A0 /* AppDelegate.swift */,
@@ -485,6 +488,7 @@
 				984E0070227CF006002F565E /* CreateEventViewController.swift in Sources */,
 				C2E8191722653D5C00BDB4A0 /* EventViewController.swift in Sources */,
 				C2E8191122653D1200BDB4A0 /* NewslettersFeedViewController.swift in Sources */,
+				C280C79C22892E5B00E86EC8 /* Server.swift in Sources */,
 				C2E8190F22653D0700BDB4A0 /* EventsFeedViewController.swift in Sources */,
 				C2E8190B22653C6300BDB4A0 /* HomeTabBarController.swift in Sources */,
 				C2E818DB226538AE00BDB4A0 /* AppDelegate.swift in Sources */,
