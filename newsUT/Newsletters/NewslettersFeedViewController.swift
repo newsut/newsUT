@@ -18,12 +18,25 @@ class NewslettersFeedViewController: UIViewController, UITableViewDataSource, UI
         
         newslettersTableView.delegate = self
         newslettersTableView.dataSource = self
+        
+        refreshNewsletters()
 
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = getNewslettersQuery()
+        query.findObjectsInBackground { (newsletters_, error) in
+            if(newsletters_ != nil){
+                newsletters = newsletters_!
+                self.newslettersTableView.reloadData()
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return newsletters.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

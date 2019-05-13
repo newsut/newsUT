@@ -75,33 +75,85 @@ func logout() -> Bool {
 
 
 
-func uploadArticle(){
-    /*
+func uploadArticle(title: String, text: String, date: String, image_: UIImage?){
     let post = PFObject(className: "Article")
     
-    post["caption"] = captionTextField.text!
+    post["title"] = ""
     post["author"] = PFUser.current()!
+    post["text"] = ""
+    post["date"] = ""
     
     
-    let imageData = imageView.image!.pngData()
-    let file = PFFileObject(data: imageData!)
     
-    post["image"] = file
+    if let image = image_{
+        let imageData = image.pngData()
+        let file = PFFileObject(data: imageData!)
+        
+        post["image"] = file
+    }
     
     post.saveInBackground { (success, error) in
         if success {
-            self.dismiss(animated: true, completion: nil)
+            //self.dismiss(animated: true, completion: nil)
         }
         else {
             print("error posting")
         }
     }
-*/
+
 }
-func uploadNewsletter(){
+func uploadNewsletter(title: String, text: String, date: String, image_: UIImage?){
+    let post = PFObject(className: "Newsletter")
+    
+    post["title"] = ""
+    post["author"] = PFUser.current()!
+    post["text"] = ""
+    post["date"] = ""
+    
+    
+    
+    if let image = image_{
+        let imageData = image.pngData()
+        let file = PFFileObject(data: imageData!)
+        
+        post["image"] = file
+    }
+    
+    post.saveInBackground { (success, error) in
+        if success {
+            //self.dismiss(animated: true, completion: nil)
+        }
+        else {
+            print("error posting")
+        }
+    }
     
 }
-func uploadEvent(){
+func uploadEvent(title: String, text: String, date: String, image_: UIImage?){
+    let post = PFObject(className: "Event")
+    
+    post["title"] = ""
+    post["author"] = PFUser.current()!
+    post["text"] = ""
+    post["date"] = ""
+    
+    
+    
+    if let image = image_{
+        let imageData = image.pngData()
+        let file = PFFileObject(data: imageData!)
+        
+        post["image"] = file
+    }
+    
+    post.saveInBackground { (success, error) in
+        if success {
+            //self.dismiss(animated: true, completion: nil)
+        }
+        else {
+            print("error posting")
+        }
+    }
     
 }
 
@@ -109,12 +161,33 @@ var articles = [PFObject]()
 var newsletters = [PFObject]()
 var events = [PFObject]()
 
-func refreshArticles(){
-    
+func getArticlesQuery() -> PFQuery<PFObject> {
     let query = PFQuery(className: "Article")
     //query.includeKeys(["author", "comments", "comments.user"])
     query.includeKeys(["author"])
     query.limit = 20
+    return query
+}
+
+func getNewslettersQuery() -> PFQuery<PFObject>{
+    let query = PFQuery(className: "Newsletter")
+    //query.includeKeys(["author", "comments", "comments.user"])
+    query.includeKeys(["author"])
+    query.limit = 20
+    return query
+}
+
+func getEventsQuery() -> PFQuery<PFObject>{
+    let query = PFQuery(className: "Event")
+    //query.includeKeys(["author", "comments", "comments.user"])
+    query.includeKeys(["author"])
+    query.limit = 20
+    return query
+}
+
+func refreshArticles(){
+    
+    let query = getArticlesQuery()
     
     query.findObjectsInBackground { (articles_, error) in
         if articles_ != nil{
@@ -122,15 +195,10 @@ func refreshArticles(){
             //self.tableView.reloadData()
         }
     }
-
 }
 func refreshNewsletters(){
     
-    let query = PFQuery(className: "Newsletter")
-    //query.includeKeys(["author", "comments", "comments.user"])
-    query.includeKeys(["author"])
-    query.limit = 20
-    
+    let query = getNewslettersQuery()
     query.findObjectsInBackground { (newsletters_, error) in
         if newsletters_ != nil{
             newsletters = newsletters_!
@@ -140,10 +208,7 @@ func refreshNewsletters(){
 }
 func refreshEvents(){
     
-    let query = PFQuery(className: "Event")
-    //query.includeKeys(["author", "comments", "comments.user"])
-    query.includeKeys(["author"])
-    query.limit = 20
+    let query = getEventsQuery()
     
     query.findObjectsInBackground { (events_, error) in
         if events_ != nil{

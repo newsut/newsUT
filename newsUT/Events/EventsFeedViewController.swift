@@ -12,10 +12,9 @@ import Parse
 class EventsFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
-
     @IBOutlet weak var eventsTableView: UITableView!
     var refreshControl: UIRefreshControl!
-    var events = [PFObject]()
+    //var events = [PFObject]()
     var selectedEvent: PFObject!
     var numberOfEvents: Int!
     
@@ -26,11 +25,25 @@ class EventsFeedViewController: UIViewController, UITableViewDataSource, UITable
         // Do any additional setup after loading the view.
         eventsTableView.dataSource = self
         eventsTableView.delegate = self
+        
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = getEventsQuery()
+        query.findObjectsInBackground { (events_, error) in
+            if(events_ != nil){
+                events = events_!
+                self.eventsTableView.reloadData()
+            }
+        }
+        
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -26,9 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
-        signupUser(username: "akarshkumar0101", password: "Minecraft1")
-        
-        
         return true
     }
 

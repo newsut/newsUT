@@ -15,7 +15,7 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var articleTableView: UITableView!
     var refreshControl: UIRefreshControl!
-    var articles = [PFObject]()
+    //var articles = [PFObject]()
     var selectedArticles: PFObject!
     var numberOfArticles: Int!
     
@@ -33,12 +33,24 @@ class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
         articleTableView.delegate = self
         articleTableView.dataSource = self
+        
+        refreshArticles()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = getArticlesQuery()
+        query.findObjectsInBackground { (articles_, error) in
+            if(articles_ != nil){
+                articles = articles_!
+                self.articleTableView.reloadData()
+            }
+        }
     }
     
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return articles.count
     
     }
     
