@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class ArticlesFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
     @IBOutlet weak var articleTableView: UITableView!
-    
+    var refreshControl: UIRefreshControl!
+    var articles = [PFObject]()
+    var selectedArticles: PFObject!
+    var numberOfArticles: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()

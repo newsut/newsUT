@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Parse
 
 class EventsFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
 
     @IBOutlet weak var eventsTableView: UITableView!
+    var refreshControl: UIRefreshControl!
+    var events = [PFObject]()
+    var selectedEvent: PFObject!
+    var numberOfEvents: Int!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
