@@ -16,7 +16,12 @@ class DiscoverFeedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logoutClicked(_ sender: UIBarButtonItem) {
+        if(logout()){
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

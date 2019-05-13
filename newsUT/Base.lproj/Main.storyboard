@@ -304,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4C-oJ-TUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="1618.7406296851575"/>
+            <point key="canvasLocation" x="148" y="1618"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="Zfd-2m-bQq">
@@ -595,7 +595,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="crw-yf-wEz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Discover" id="R44-Pu-d6w"/>
+                    <navigationItem key="navigationItem" title="Discover" id="R44-Pu-d6w">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MqQ-bi-SQU">
+                            <connections>
+                                <action selector="logoutClicked:" destination="Yy1-vx-wAa" id="PC6-Ez-74Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEe-zA-zHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -856,6 +862,16 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-k2-5lr">
+                                        <rect key="frame" x="15" y="8" width="34" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed:" destination="xTa-qp-AOm" eventType="touchUpInside" id="dtt-v6-Ay9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="uyJ-Pa-21w" firstAttribute="top" secondItem="hzb-c2-lfc" secondAttribute="bottom" id="C88-KI-Cyu"/>
@@ -927,7 +943,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="newsUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOY-QG-4kU">
                                 <rect key="frame" x="98" y="83" width="193" height="100"/>
@@ -966,7 +982,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onLogin:" destination="1SL-f1-N94" eventType="touchUpInside" id="W8m-hi-oxP"/>
+                                    <action selector="onLogin:" destination="1SL-f1-N94" eventType="touchUpInside" id="7d9-HT-inw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftY-Cl-qiO">
@@ -977,7 +993,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                 </state>
                                 <connections>
                                     <action selector="onSkipAccount:" destination="1SL-f1-N94" eventType="touchUpInside" id="AUc-4g-8bO"/>
-                                    <segue destination="MMq-nT-b4T" kind="show" id="ZOb-I0-HD0"/>
+                                    <segue destination="MMq-nT-b4T" kind="show" identifier="loginSegue" id="ZOb-I0-HD0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1051,7 +1067,7 @@ The race course winds through the historic Forty Acres and area neighborhoods as
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-Eb-ceA">
                                 <rect key="frame" x="83" y="237" width="209" height="30"/>
