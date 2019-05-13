@@ -51,7 +51,6 @@ class EventsFeedViewController: UIViewController, UITableViewDataSource, UITable
         
         let event = events[indexPath.row]
         
-        
         cell.locationLabel.text = event["location"] as? String
         cell.eventLabel.text = event["title"] as? String
         cell.timedateLabel.text = event["date"] as? String

@@ -114,6 +114,8 @@ class CreateEventViewController: UITableViewController, UIImagePickerControllerD
 
 
     @IBAction func onCreate(_ sender: Any) {
+        uploadEvent(title: titleField.text!, text: aboutTextView.text!, date: dateTimeLabel.text!, image_: eventImage.image)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func onCancel(_ sender: Any) {
