@@ -224,25 +224,25 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZi-gI-5JM">
-                                                    <rect key="frame" x="113" y="11" width="258" height="24"/>
+                                                    <rect key="frame" x="113" y="11" width="219" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-Mb-xug">
-                                                    <rect key="frame" x="113" y="38" width="258" height="18"/>
+                                                    <rect key="frame" x="113" y="38" width="219" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME &amp; DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF0-od-2fZ">
-                                                    <rect key="frame" x="113" y="59" width="258" height="18"/>
+                                                    <rect key="frame" x="113" y="59" width="219" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="textColor" red="0.77254901960784317" green="0.29803921568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pm-rA-hWW">
-                                                    <rect key="frame" x="381" y="41" width="18" height="30"/>
+                                                    <rect key="frame" x="342" y="41" width="18" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="18" id="NES-5a-k72"/>
                                                         <constraint firstAttribute="height" constant="30" id="ppo-dv-sY8"/>
@@ -277,7 +277,6 @@
                                             <outlet property="locationLabel" destination="mNN-Mb-xug" id="PZk-d7-1hr"/>
                                             <outlet property="saveButton" destination="6pm-rA-hWW" id="kGl-lw-UJi"/>
                                             <outlet property="timedateLabel" destination="qF0-od-2fZ" id="Df5-Io-pJs"/>
-                                            <segue destination="xTa-qp-AOm" kind="show" id="wbg-1c-5Xw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -702,13 +701,13 @@
         <!--Event View Controller-->
         <scene sceneID="Opg-Lb-USm">
             <objects>
-                <viewController id="xTa-qp-AOm" customClass="EventViewController" customModule="newsUT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventViewController" id="xTa-qp-AOm" customClass="EventViewController" customModule="newsUT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bLn-oJ-jm9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raq-UT-1hv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-c2-lfc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class EventViewController: UIViewController {
 
@@ -22,6 +23,8 @@ class EventViewController: UIViewController {
     @IBOutlet weak var ticketButton: UIButton!
     @IBOutlet weak var aboutEvent: UILabel!
     
+    
+    var event:PFObject? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

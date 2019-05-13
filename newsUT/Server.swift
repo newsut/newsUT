@@ -132,10 +132,10 @@ func uploadNewsletter(title: String, text: String, date: String, image_: UIImage
 func uploadEvent(title: String, text: String, date: String, image_: UIImage?){
     let post = PFObject(className: "Event")
     
-    post["title"] = ""
+    post["title"] = title
     post["author"] = PFUser.current()!
-    post["text"] = ""
-    post["date"] = ""
+    post["text"] = text
+    post["date"] = date
     
     
     
