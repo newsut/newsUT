@@ -247,6 +247,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="ppo-dv-sY8"/>
                                                     </constraints>
                                                     <state key="normal" image="Saved"/>
+                                                    <connections>
+                                                        <action selector="onSave:" destination="mlT-Cn-WY7" eventType="touchUpInside" id="uD8-90-tqH"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -271,6 +274,7 @@
                                             <outlet property="eventImageView" destination="1MH-xi-Ym3" id="NU7-e1-onK"/>
                                             <outlet property="eventLabel" destination="WZi-gI-5JM" id="QRr-ZE-IqA"/>
                                             <outlet property="locationLabel" destination="mNN-Mb-xug" id="PZk-d7-1hr"/>
+                                            <outlet property="saveButton" destination="6pm-rA-hWW" id="kGl-lw-UJi"/>
                                             <outlet property="timedateLabel" destination="qF0-od-2fZ" id="Df5-Io-pJs"/>
                                             <segue destination="xTa-qp-AOm" kind="show" id="wbg-1c-5Xw"/>
                                         </connections>
