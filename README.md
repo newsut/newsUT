@@ -179,3 +179,20 @@ An app that allows users to read news articles from UT News sites such as the Da
 <br />
 <img src="https://i.imgur.com/6wOkgcr.jpg" width=300>
 
+## Final
+### Completed
+- [x] Logging in and logging out
+- [x] Creating an account
+- [x] Tab bar navigation
+- [x] Custom auto layout UI that looks industry professional
+- [x] Ability to save an event
+- [x] Ability to view event
+- [x] Ability to create and post an event
+### To Do for Future
+- [] Implement news articles tab, newsletters tab, and discover/search tab
+- [] Fix image bug with events in parse backend
+- [] Add maps ability for location
+- [] Add UIWebview ability to get tickets for events
+- [] Add variation of accounts and ability to follow organization accounts
+
+
